@@ -1,0 +1,253 @@
+/* Start of Custom Variables */
+:root {
+    --main-color: #7651dc;
+    --secondary-color: #ffcc69;
+}
+/* End of Custom Variables */
+/* Start of Gloable Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f5;
+    font-family: "DM Sans", sans-serif;
+}
+/* End of Gloable Rules */
+.container {
+    margin: 25px auto;
+    padding: 50px;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+    .container .card {
+        grid-column: span 2;
+    }
+    .container .card:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+    .container .card.two {
+        order: 1;
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    .container .card.two img {
+        display: block;
+        margin: 0 auto;
+    }
+    .container .card.five {
+        order: 2;
+        margin-top: 0;
+    }
+    .container .card.five img {
+        display: block;
+        margin: 0 auto;
+    }
+    .container .card.six {
+        order: 3;
+        margin-top: 0;
+        min-height: 150px;
+    }
+    .container .card.six img {
+        bottom: -10px;
+        width: 120px;
+        left: 75px;
+    }
+    .container .three {
+        order: 4;
+    }
+    .container .card.three p {
+        text-align: center;
+        font-size: 20px;
+    }
+    .container .eight {
+        order: 5;
+    }
+    .container .seven {
+        order: 6;
+    }
+    .container .one {
+        order: 7;
+    }
+    .container .four {
+        order: 8;
+    }
+    .container .card.four img {
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+/* .container .card {  
+} */
+.container .one {
+    background-color: #faeee2;
+    padding: 50px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 180px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .one span {
+    color: #7651dc;
+}
+.container .one img {
+    display: block;
+    max-width: 100%;
+    width: 100px;
+    margin: 20px auto 0;
+}
+.container .two {
+    font-size: 35px;
+    background-color: var(--main-color);
+    grid-column: span 2;
+    padding: 20px 15px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .two span {
+    color: var(--secondary-color);
+}
+.container .two img {
+    max-width: 100%;
+    width: 100px;
+}
+.container .two p {
+    font-size: 12px;
+    margin-top: 0;
+}
+.container .three {
+    min-width: 180px;
+    padding: 30px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    grid-row: span 2;
+    overflow: hidden;
+    background-color: #dcd1fc;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .three img {
+    width: 235px;
+    height: 210px;
+    margin: 15px 10px 0
+}
+.container .three p {
+    font-size: 12px;
+    color: #554f4f;
+}
+.container .four {
+    background-color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 15px 0;
+    grid-row: span 2;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .four img {
+    display: block;
+    max-width: 100%;
+    height: 150px;
+    width: 130px;
+    margin: 45px auto 0;
+}
+.container .five {
+    padding: 15px;
+    margin-top: -60px;
+    overflow: hidden;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .five img {
+    width: 185px;
+}
+.container .six {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    margin-top: -60px;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .six img {
+    width: 100px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.container .seven {
+    padding: 15px;
+    background-color: white;
+    font-size: 40px;
+}
+.container .seven p {
+    font-size: 12px;
+    text-align: center;
+}
+.container .seven img {
+    max-width: 100%;
+    width: 100px;
+}
+.container .eight {
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-column: span 2;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.container .eight img {
+    max-width: 100%;
+    width: 150px;
+}
